@@ -1,9 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <header style="height: 50px; border-bottom: 1px solid black;">
+    <div style="display: flex; justify-content: space-around; align-items: center; height: 100%;">
+      <button @click="abrirPestañaEducador()">Educador</button>
+      <button @click="abrirNuevaPestana()">Grupo</button>
+      <button @click="abrirNuevaPestana()">Cliente</button>
+      <button @click="abrirNuevaPestana()">Proveedor</button>
+      <button @click="abrirNuevaPestana()">Contrato</button>
+    </div>
+  </header>
+   
 </template>
 
 <style lang="scss">
@@ -28,3 +33,17 @@ nav {
   }
 }
 </style>
+
+<script lang="ts">
+export default {
+  methods: {
+    abrirNuevaPestana() {
+      window.open('https://www.google.com', '_blank');
+    },
+    abrirPestañaEducador() {
+      window.open('@/src/ventanas/Educador.html', '_blank');
+    }
+  }
+}
+
+</script>
