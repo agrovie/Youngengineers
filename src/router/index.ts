@@ -1,12 +1,17 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-
+/* import Educador from '@/public/ventanas/educador.html'; */
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
     component: HomeView,
   },
+/*   {
+    path: '/educador',
+    name: 'educador',
+    component: Educador
+  }, */
   {
     path: "/about",
     name: "about",

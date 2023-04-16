@@ -41,7 +41,8 @@ export default {
       window.open('https://www.google.com', '_blank');
     },
     abrirPestañaEducador() {
-      window.open('@/src/ventanas/Educador.html', '_blank');
+      window.location.href = "./ventanas/educador.html";
+      /* window.open('./ventanas/educador.html', '_blank'); */
     }
   }
 }
